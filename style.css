@@ -21,6 +21,7 @@ body
 .resultimgages{
     display: flex;
     column-gap: 7rem;
+    position: relative;
 }
 .resultimgages img{
     width: 100px;
@@ -61,4 +62,18 @@ body
     font-size: 1.2rem;
     margin-top: 1rem;
 
+}
+.you{
+    color: #7d2ae8;
+    position: absolute;
+    left: -40px;
+    bottom: 80px;
+    transform: rotate(-90deg);
+}
+.com{
+    color: #7d2ae8;
+    position: absolute;
+    left: -60px;
+    bottom: 80px;
+    transform: rotate(-90deg) rotateY(180deg) ;
 }

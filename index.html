@@ -10,16 +10,20 @@
     <section class="container">
         <div class="resultfield">
             <div class="resultimgages">
+                
                 <span class="userresult">
+                    <p class="you">you</p>
                     <img src="Assets/images/rock.png" alt="rock" onclick="game('rock')">
                 </span>
                 <span class="comresult">
+                    <p class="com">computer</p>
                     <img src="Assets/images/rock.png" alt="computer move">
                 </span>
             </div>
             <div class="result">Let's Play!</div>
             <div class="optionimages">
                 <span class="option">
+                    
                     <img src="Assets/images/rock.png" alt="rock" onclick="game('rock')">
                     <p>rock</p>
                 </span>
@@ -32,6 +36,7 @@
                     <p>scissors</p>
                 </span>
             </div>
+            
         </div>
        </section>
 
@@ -39,6 +44,10 @@
 
 
     <script>
+       
+       function game(user){
+
+
         let randommove=Math.random();
        randommove = Math.floor(randommove*3)+1;
        let computermove;
@@ -49,14 +58,7 @@
         computermove = 'paper';
        }
        else{
-        computermove = 'scissor';
-       }
-        console.log(computermove);
-
-
-
-       function game(user){
-        console.log(user)
+        computermove = 'scissors';
        }
 
 
@@ -65,6 +67,40 @@
 
 
 
+        console.log(user);
+        if(computermove===user){
+            console.log('its a tie');
+            document.querySelector('.userresult img').src = `Assets/images/rock.png`;
+            document.querySelector('.comresult img').src = `Assets/images/rock.png`;
+        
+        }
+        if(user === 'paper'){
+            document.querySelector('.userresult img').src = `Assets/images/paper.png`
+        }
+        else if(user === 'scissors'){
+            document.querySelector('.userresult img').src = `Assets/images/scissors.png`
+        }
+        else if(user === 'rock'){
+            document.querySelector('.userresult img').src = `Assets/images/rock.png`
+        }
+
+
+
+
+
+        if(computermove === 'paper'){
+            document.querySelector('.comresult img').src = `Assets/images/paper.png`
+        }
+        else if(computermove === 'scissors'){
+            document.querySelector('.comresult img').src = `Assets/images/scissors.png`
+        }
+        else if(computermove === 'rock'){
+            document.querySelector('.comresult img').src = `Assets/images/rock.png`
+        }
+
+
+        
+     
 
 
 
@@ -94,6 +130,13 @@
 
 
 
+
+
+
+
+
+
+    }
     </script>
     
 </body>
