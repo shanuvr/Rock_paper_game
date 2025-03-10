@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Papper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="resultfield">
+            <div class="resultimgages">
+                <span class="userresult">
+                    <img src="Assets/images/rock.png" alt="rock" onclick="game('rock')">
+                </span>
+                <span class="comresult">
+                    <img src="Assets/images/rock.png" alt="computer move">
+                </span>
+            </div>
+            <div class="result">Let's Play!</div>
+            <div class="optionimages">
+                <span class="option">
+                    <img src="Assets/images/rock.png" alt="rock" onclick="game('rock')">
+                    <p>rock</p>
+                </span>
+                <span class="option">
+                    <img src="Assets/images/paper.png" alt="paper" onclick="game('paper')">
+                    <p>paper</p>
+                </span>
+                <span class="option">
+                    <img src="Assets/images/scissors.png" alt="scissors" onclick="game('scissors')">
+                    <p>scissors</p>
+                </span>
+            </div>
+        </div>
+       </section>
+
+
+
+
+    <script>
+        let randommove=Math.random();
+       randommove = Math.floor(randommove*3)+1;
+       let computermove;
+       if(randommove===1){
+        computermove = 'rock';
+       }
+       else if(randommove===2){
+        computermove = 'paper';
+       }
+       else{
+        computermove = 'scissor';
+       }
+        console.log(computermove);
+
+
+
+       function game(user){
+        console.log(user)
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
