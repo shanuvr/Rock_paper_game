@@ -77,3 +77,29 @@ body
     bottom: 80px;
     transform: rotate(-90deg) rotateY(180deg) ;
 }
+.score{
+    margin-top: 3rem;
+    display: flex;
+   justify-content:space-around ;
+
+}
+.yous{
+    margin-top: 1rem;
+    color: #7d2ae8;
+    opacity: 0.7;
+   
+}
+#your-score{
+    margin-top: 1rem;
+    font-size: 2rem;
+    opacity: 1;
+    
+}
+#computer-score{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+#ties{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
