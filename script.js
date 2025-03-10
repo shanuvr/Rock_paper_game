@@ -38,8 +38,7 @@ function game(user) {
 
   if (computermove === user) {
     console.log("its a tie");
-    document.querySelector(".userresult img").src = `Assets/images/rock.png`;
-    document.querySelector(".comresult img").src = `Assets/images/rock.png`;
+    
     score.tie = score.tie + 1;
     document.getElementById("ties").innerHTML = score.tie;
     document.getElementById("score-display").innerHTML = "Its a tie";
