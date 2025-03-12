@@ -4,6 +4,21 @@ let score = {
   tie: 0,
 };
 
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'r') {
+    game('rock');
+  }
+});
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'p') {
+    game('paper');
+  }
+});
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 's') {
+    game('scissors');
+  }
+});
 function game(user) {
   let randommove = Math.random();
   randommove = Math.floor(randommove * 3) + 1;
